@@ -1,5 +1,4 @@
 FROM ruby:3.2.1-bullseye as develop
-MAINTAINER operations@openproject.com
 
 ARG DEV_UID=1000
 ARG DEV_GID=1001
@@ -44,8 +43,6 @@ EXPOSE 3000
 VOLUME [ "/usr/local/bundle", "/home/$USER/openproject", "/home/$USER/openproject/tmp" ]
 
 WORKDIR /home/$USER/openproject
-# COPY . .
-# RUN /usr/sbin/setup
 
 USER $USER
 
