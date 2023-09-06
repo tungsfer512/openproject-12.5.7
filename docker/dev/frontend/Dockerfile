@@ -1,5 +1,4 @@
 FROM node:18.17.0
-MAINTAINER operations@openproject.com
 
 ARG DEV_UID=1000
 ARG DEV_GID=1001
@@ -24,7 +23,5 @@ RUN chown $USER:$USER -R /home/dev
 VOLUME ["/home/dev/openproject", "/home/dev/openproject/public/assets/frontend"]
 
 WORKDIR /home/dev/openproject/frontend
-COPY . .
-RUN npm install
 
 USER $USER
