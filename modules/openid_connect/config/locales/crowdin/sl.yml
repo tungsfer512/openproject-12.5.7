@@ -1,0 +1,23 @@
+sl:
+  logout_warning: >
+    Bili ste izpisani. Oddana vsebina katerekoli oblike se lahko izgubi. Prosim [prijavi se].
+  activemodel:
+    attributes:
+      openid_connect/provider:
+        name: Ime
+        display_name: Prikazno ime
+        identifier: Identifikator
+        secret: Skrivnost
+        scope: Področje
+        limit_self_registration: Omeji samoregistracijo
+  openid_connect:
+    menu_title: OpenID ponudniki
+    providers:
+      label_add_new: Dodaj novega OpenID ponudnika
+      label_edit: Uredi OpenID ponudnik %{name}
+      no_results_table: Zaenkrat še ni opredeljenih ponudnikov.
+      plural: OpenID ponudniki
+      singular: OpenID ponudnik
+    setting_instructions:
+      limit_self_registration: >
+        If enabled users can only register using this provider if the self registration setting allows for it.

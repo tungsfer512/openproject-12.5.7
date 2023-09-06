@@ -1,0 +1,23 @@
+it:
+  logout_warning: >
+    Sei stato disconnesso. Il contenuto di qualsiasi modulo che invii potrebbe essere perso. Per favore [accedi].
+  activemodel:
+    attributes:
+      openid_connect/provider:
+        name: Nome
+        display_name: Visualizza nome
+        identifier: Identificativo
+        secret: Parola chiave
+        scope: Ambito
+        limit_self_registration: Limita registrazione autonoma
+  openid_connect:
+    menu_title: OpenID provider
+    providers:
+      label_add_new: Aggiungi un nuovo provider OpenID
+      label_edit: Modifica provider OpenID %{name}
+      no_results_table: Non è stato definito alcun provider.
+      plural: OpenID provider
+      singular: Provider OpenID
+    setting_instructions:
+      limit_self_registration: >
+        Se abilitato, gli utenti possono registrarsi esclusivamente utilizzando questo fornitore, se l'impostazione di registrazione autonoma lo consente.
