@@ -27,16 +27,20 @@ See COPYRIGHT and LICENSE files for more details.
 
 ++#%>
 
-<% breadcrumb_paths(t(:label_login)) %>
-<% html_title t(:label_login) %>
-<%= call_hook :view_account_login_top %>
-<div id="login-form" class="form -bordered">
-  <h1><%= I18n.t(:label_login) %></h1>
+<div class="login-wrapper">
+  <% breadcrumb_paths(t(:label_login)) %>
+  <% html_title t(:label_login) %>
+  <%= call_hook :view_account_login_top %>
+  <div id="login-form" class="form -bordered">
+    <h1><img src="/assets/logo-ptit.jpg"/></h1>
 
-  <hr class="form--separator" />
-  <% unless OpenProject::Configuration.disable_password_login? %>
-    <%= render partial: 'password_login_form' %>
-  <% end %>
-  <%= render partial: 'auth_providers' %>
+    <hr class="form--separator" />
+    <% unless OpenProject::Configuration.disable_password_login? %>
+      <%= render partial: 'password_login_form' %>
+    <% end %>
+    <%= render partial: 'auth_providers' %>
+  </div>
+  <%= call_hook :view_account_login_bottom %>
 </div>
-<%= call_hook :view_account_login_bottom %>
+
+

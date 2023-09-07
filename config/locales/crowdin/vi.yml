@@ -401,7 +401,7 @@ vi:
       Tài khoản của bạn đã không được nêu ra được kích hoạt. Xin vui lòng chờ cho người quản trị để kích hoạt tài khoản của bạn.
     error_self_registration_disabled: >
       Đăng ký người dùng bị vô hiệu hóa trên hệ thống này. Xin vui lòng hỏi người quản trị để tạo ra một tài khoản cho bạn.
-    login_with_auth_provider: "hoặc đăng nhập bằng tài khoản hiện tại"
+    login_with_auth_provider: "hoặc đăng nhập với"
     signup_with_auth_provider: "hoặc sử dụng đăng ký"
     auth_source_login: Please login as <em>%{login}</em> to activate your account.
     omniauth_login: Please login to activate your account.
@@ -1784,7 +1784,7 @@ vi:
   label_overview: "Tổng quan"
   label_page_title: "Tiêu đề trang"
   label_part_of: "một phần của"
-  label_password_lost: "Quên Mật Khẩu?"
+  label_password_lost: "Quên mật khẩu?"
   label_password_rule_lowercase: "Chữ thường"
   label_password_rule_numeric: "Kiểu số"
   label_password_rule_special: "Ký tự đặc biệt"
@@ -2145,7 +2145,7 @@ vi:
   notice_account_already_activated: The account has already been activated.
   notice_account_invalid_token: Invalid activation token
   notice_account_invalid_credentials: "Tài khoản hoặc mật mã không hợp lệ"
-  notice_account_invalid_credentials_or_blocked: "Invalid user or password or the account is blocked due to multiple failed login attempts. If so, it will be unblocked automatically in a short time."
+  notice_account_invalid_credentials_or_blocked: "Người dùng hoặc mật khẩu không hợp lệ hoặc tài khoản bị chặn do đăng nhập nhiều lần không thành công."
   notice_account_lost_email_sent: "An email with instructions to choose a new password has been sent to you."
   notice_account_new_password_forced: "A new password is required."
   notice_account_password_expired: "Your password expired after %{days} days. Please set a new one."

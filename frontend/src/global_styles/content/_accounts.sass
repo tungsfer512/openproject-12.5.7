@@ -135,3 +135,33 @@
 
   &--agreement
     font-size: inherit
+
+.login-wrapper 
+  position: fixed
+  top: 55px
+  left: 0
+  bottom: 0
+  right: 0
+  background-image: url('/assets/bgr.jpeg')
+  background-size: cover
+  background-position: center
+  display: flex
+  align-items: center
+  justify-content: center
+  #login-form
+    background-color: white
+    margin: 0
+
+#content .login-auth-providers h3 span 
+  background: white !Important
+  padding: 0 10px
+
+.login-auth-provider-list 
+  display: flex
+  flex-direction: column
+
+.form--field.-required .form--label:after
+  color: red !Important
+
+.op-app-header #nav-login-content.auth-provider-google, .op-app-header #nav-login-content.auth-provider-azure, .op-app-header #nav-login-content.auth-provider-heroku, #content.auth-provider-google, #content.auth-provider-azure, #content.auth-provider-heroku, .login-auth-providers a.auth-provider.auth-provider-google, .login-auth-providers a.auth-provider.auth-provider-azure, .login-auth-providers a.auth-provider.auth-provider-heroku
+  margin: 0 0 20px 0 !Important
