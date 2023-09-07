@@ -37,7 +37,7 @@ describe FrontendAssetHelper do
       end
 
       it 'returns the proxied frontend server' do
-        expect(helper.include_frontend_assets).to include('script src="http://localhost:4200/assets/frontend/main.js"')
+        expect(helper.include_frontend_assets).to include('script src="http://192.168.10.242:4200/assets/frontend/main.js"')
       end
     end
 
